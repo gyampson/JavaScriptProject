@@ -1,0 +1,219 @@
+[
+  {
+    "id": 1,
+    "name": "Kaftan",
+    "price": "400",
+    "image": "images/img (1).jpg"
+  },
+  {
+    "id": 2,
+    "name": "Kente",
+    "price": "300",
+    "image": "images/img (2).jpg"
+  },
+  {
+    "id": 3,
+    "name": "African Style",
+    "price": "100",
+    "image": "images/img (3).jpg"
+  },
+  {
+    "id": 4,
+    "name": "Roots",
+    "price": "500",
+    "image": "images/img (40).jpg"
+  },
+  {
+    "id": 5,
+    "name": "Prints",
+    "price": "300",
+    "image": "images/img (5).jpg"
+  },
+  {
+    "id": 6,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (6).jpg"
+  },
+  {
+    "id": 7,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (7).jpg"
+  },
+  {
+    "id":8,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (8).jpg"
+  },
+  {
+    "id": 9,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (9).jpg"
+  },
+  {
+    "id": 10,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (10).jpg"
+  },
+  {
+    "id": 11,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (11).jpg"
+  },
+  {
+    "id": 12,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (12).jpg"
+  },
+  {
+    "id": 13,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (13).jpg"
+  },
+  {
+    "id": 14,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (14).jpg"
+  },
+  {
+    "id": 15,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (15).jpg"
+  },
+  {
+    "id": 16,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (16).jpg"
+  },
+  {
+    "id": 17,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (17).jpg"
+  },
+  {
+    "id": 18,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (18).jpg"
+  },
+  {
+    "id": 19,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (19).jpg"
+  },
+  {
+    "id": 20,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (20).jpg"
+  },
+  {
+    "id": 21,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (21).jpg"
+  },
+  {
+    "id": 22,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (22).jpg"
+  },
+  {
+    "id": 23,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (23).jpg"
+  },
+  {
+    "id": 24,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (24).jpg"
+  },
+  {
+    "id": 25,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (25).jpg"
+  },
+  {
+    "id": 27,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (27).jpg"
+  },
+  {
+    "id": 28,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (28).jpg"
+  },
+  {
+    "id": 29,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (29).jpg"
+  },
+  {
+    "id": 30,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (30).jpg"
+  },
+  {
+    "id": 33,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (33).jpg"
+  },
+  {
+    "id": 34,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (34).jpg"
+  },
+  {
+    "id": 35,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (35).jpg"
+  },
+  {
+    "id": 36,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (36).jpg"
+  },
+  {
+    "id": 37,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (37).jpg"
+  },
+  {
+    "id": 38,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (38).jpg"
+  },
+  {
+    "id": 39,
+    "name": "GTP",
+    "price": "200",
+    "image": "images/img (39).jpg"
+  }
+  
+]

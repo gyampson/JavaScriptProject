@@ -1,0 +1,406 @@
+body {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  color: aliceblue;
+  font-family: Parkinsans, sans-serif;
+  --sz: 4px; /*** size ***/
+  --sp: 5s; /*** speed ***/
+  --b1: #211e1e; /*** color ***/
+  --b2: #1c1b18; /*** color ***/
+  --b3: #0c0b0a; /*** color ***/
+  --b4: #0c0b0ae0; /*** color ***/
+  --c1: #ffffff; /*** color ***/
+  --ts: 50% / calc(var(--sz) * 17.5) calc(var(--sz) * 29.5);
+  background:
+		/* black shadows */ radial-gradient(
+        circle at 50% 50%,
+        var(--b4) calc(var(--sz) * 1),
+        #fff0 calc(var(--sz) * 8)
+      )
+      var(--ts),
+    radial-gradient(
+        circle at 0% 0%,
+        var(--b4) calc(var(--sz) * 1),
+        #fff0 calc(var(--sz) * 8)
+      )
+      var(--ts),
+    radial-gradient(
+        circle at 0% 100%,
+        var(--b4) calc(var(--sz) * 1),
+        #fff0 calc(var(--sz) * 8)
+      )
+      var(--ts),
+    radial-gradient(
+        circle at 100% 0%,
+        var(--b4) calc(var(--sz) * 1),
+        #fff0 calc(var(--sz) * 8)
+      )
+      var(--ts),
+    radial-gradient(
+        circle at 100% 100%,
+        var(--b4) calc(var(--sz) * 1),
+        #fff0 calc(var(--sz) * 8)
+      )
+      var(--ts),
+    /* border bottom */
+      conic-gradient(
+        from 90deg at 97.5% 67%,
+        var(--c1) 0 87.5deg,
+        #fff0 88deg 100%
+      )
+      var(--ts),
+    /*repeated*/
+      conic-gradient(
+        from 90deg at 97.5% 67%,
+        var(--c1) 0 87.5deg,
+        #fff0 88deg 100%
+      )
+      var(--ts),
+    conic-gradient(
+        from 182.5deg at 2.5% 67%,
+        #fff0 0 0deg,
+        var(--c1) 0.5deg 90deg,
+        #fff0 0 100%
+      )
+      var(--ts),
+    /*repeated*/
+      conic-gradient(
+        from 182.5deg at 2.5% 67%,
+        #fff0 0 0deg,
+        var(--c1) 0.5deg 90deg,
+        #fff0 0 100%
+      )
+      var(--ts),
+    /* border top */
+      conic-gradient(
+        from 270deg at 2.5% 33%,
+        var(--c1) 0 87.5deg,
+        #fff0 88deg 100%
+      )
+      var(--ts),
+    /*repeated*/
+      conic-gradient(
+        from 270deg at 2.5% 33%,
+        var(--c1) 0 87.5deg,
+        #fff0 88deg 100%
+      )
+      var(--ts),
+    conic-gradient(
+        from 2.5deg at 97.5% 33%,
+        #fff0 0 0deg,
+        var(--c1) 0.5deg 90deg,
+        #fff0 0 100%
+      )
+      var(--ts),
+    /*repeated*/
+      conic-gradient(
+        from 2.5deg at 97.5% 33%,
+        #fff0 0 0deg,
+        var(--c1) 0.5deg 90deg,
+        #fff0 0 100%
+      )
+      var(--ts),
+    /* bottom */
+      conic-gradient(
+        from 116.5deg at 50% 85.5%,
+        var(--b1) 0 127deg,
+        #fff0 0 100%
+      )
+      var(--ts),
+    /*repeated*/
+      conic-gradient(
+        from 116.5deg at 50% 85.5%,
+        var(--b1) 0 127deg,
+        #fff0 0 100%
+      )
+      var(--ts),
+    /*repeated*/
+      conic-gradient(
+        from 116.5deg at 50% 85.5%,
+        var(--b1) 0 127deg,
+        #fff0 0 100%
+      )
+      var(--ts),
+    conic-gradient(from 120deg at 50% 83%, var(--c1) 0 120deg, #fff0 0 100%)
+      var(--ts),
+    /* top */
+      conic-gradient(
+        from -63.5deg at 50% 14.5%,
+        var(--b1) 0 127deg,
+        #fff0 0 100%
+      )
+      var(--ts),
+    /*repeated*/
+      conic-gradient(
+        from -63.5deg at 50% 14.5%,
+        var(--b1) 0 127deg,
+        #fff0 0 100%
+      )
+      var(--ts),
+    /*repeated*/
+      conic-gradient(
+        from -63.5deg at 50% 14.5%,
+        var(--b1) 0 127deg,
+        #fff0 0 100%
+      )
+      var(--ts),
+    conic-gradient(from -60deg at 50% 17%, var(--c1) 0 120deg, #fff0 0 100%)
+      var(--ts),
+    /* central gradient */
+      conic-gradient(
+        from 0deg at 50% 50%,
+        #fff0 0 2deg,
+        var(--b2) 2.5deg 57.5deg,
+        #fff0 58deg 62.5deg,
+        var(--b1) 63deg 117.5deg,
+        #fff0 118deg 122.5deg,
+        var(--b3) 123deg 177.5deg,
+        #fff0 178deg 182deg,
+        var(--b2) 182.5deg 237.5deg,
+        #fff0 0 242.5deg,
+        var(--b1) 243deg 297.5deg,
+        #fff0 298deg 302.5deg,
+        var(--b3) 303deg 357.5deg,
+        #fff0 358deg 360deg
+      )
+      var(--ts),
+    /* bg */ var(--c1);
+  animation: colors var(--sp) linear 0s infinite;
+}
+
+@keyframes colors {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+/* From Uiverse.io by Codecite */ 
+.ld-ripple {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.ld-ripple div {
+  position: absolute;
+  border: 8px solid #7c6907;
+  opacity: 0;
+  border-radius: 50%;
+  animation: ld-ripple 1.1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.ld-ripple div:nth-child(2) {
+  animation-delay: -0.9s;
+}
+
+@keyframes ld-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  4.9% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  5% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+
+/* From Uiverse.io by codebykay101 */ 
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(rgba(0, 0, 0, 6), transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 10px;
+  margin: 0 -45px;
+  backdrop-filter: blur(100px);
+  transform: rotate(calc(var(--r) * 1deg));
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 10px;
+}
+
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(224, 5, 5,5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container .glass svg {
+  font-size: 2.5em;
+  fill: #fff;
+}
+
+/* From Uiverse.io by Daniel1227k */ 
+.card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background: #f00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(315deg,#03a9f4,#ff0058);
+  filter: blur(30px);
+}
+
+.card b {
+  position: absolute;
+  inset: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+
+.card img {
+  position: absolute;
+  z-index: 3;
+  scale: 0.8;
+  opacity: 0.25;
+  transition: 0.5s;
+}
+
+.card:hover img {
+  scale: 0.5;
+  opacity: 0.9;
+  transform: translateY(-70px);
+}
+
+.card .content {
+  position: absolute;
+  z-index: 3;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.card:hover .content {
+  transform: scale(1);
+  bottom: 25px;
+}
+
+.content .title {
+  position: relative;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1em;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content .title span {
+  font-weight: 300;
+  font-size: 0.70em;
+}
+
+.content .sci {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li .fa-brands {
+  width: 14px;
+}
+
+.sci li .fa-facebook {
+  width: 10px;
+}
+
+.sci li a {
+  position: relative;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.2);
+  fill: currentColor;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+
+.sci li a:hover {
+  fill: currentColor;
+  color: rgba(255, 255, 255, 1);
+}
+

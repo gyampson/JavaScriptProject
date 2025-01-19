@@ -1,0 +1,500 @@
+body {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.952);
+  font-family: "Parkinsans", serif;
+  
+}
+section {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.calender-container {
+  background-color: antiquewhite;
+  text-align: center;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 30px rgba(42, 192, 100, 3);
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.month-name {
+  margin: 0;
+  background-color: blue;
+  color: blanchedalmond;
+  padding: 12px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.day-name {
+  font-size: 20px;
+  color: darkgreen;
+}
+.day-number {
+  font-size: 80px;
+  margin: 0;
+  color: blue;
+}
+.year {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 900;
+}
+header {
+  background-color: darkblue;
+  color: blanchedalmond;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: background-color 0.3s;
+  box-shadow: 0px 0px 30px rgba(42, 192, 100, 3);
+  display: flex;
+  justify-content: end;
+}
+
+.menu-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  color: aliceblue;
+}
+.menu-bar ul li a {
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+  text-decoration: none;
+  color: rgb(10, 234, 77);
+}
+.active,
+.menu-bar ul li a:hover {
+  background-color: rgb(0, 139, 69);
+  color: blanchedalmond;
+  border-radius: 4px;
+  box-shadow: inset 0px 0px 5px rgba(42, 192, 100, 3);
+}
+.active,
+.sub-menu1 ul li a:hover {
+  background-color: rgb(163, 51, 155);
+
+  color: blanchedalmond;
+  border-radius: 4px;
+}
+.sub-menu1 {
+  display: none;
+}
+.sub-menu1 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  left: 0;
+  transition: all 0.5s ease;
+}
+.sub-menu1 ul li {
+  border-bottom: 1.5px solid #e44343;
+}
+.menu-bar ul li:hover .sub-menu1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: aqua;
+  margin-top: 20px;
+  width: 50%;
+  transform: scale(1.1, 1.1);
+}
+
+footer {
+  background-color: darkblue;
+  color: blanchedalmond;
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  justify-content: center;
+  text-align: center;
+}
+button {
+  width: 10em;
+  height: 3.5em;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: inset 0px 0px 5px rgba(42, 192, 100, 3);
+}
+
+button::after {
+  transition: 4s;
+  transform-origin: center;
+}
+
+button::before {
+  transform-origin: center;
+  transition: 5s;
+}
+
+button:hover::before,
+button:hover::after {
+  transform: scale(50%);
+}
+
+button:hover {
+  box-shadow: inset 40px 60px 25px #1479ea;
+}
+.img {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+login {
+  max-width: 500px;
+  background-color: transparent;
+  /* border: 2px solid #f1f1f1; */
+  box-shadow: 5px 5px 3px rgba(19, 164, 118, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 3rem;
+  transition: all 0.5s ease-in-out;
+  color: #ccc;
+}
+login h1 {
+  font-size: 2.5em;
+  text-align: center;
+  color: rgb(191, 207, 139);
+  box-shadow: 5px 5px 3px rgba(19, 164, 118, 0.5);
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  text-shadow: 5px 5px 3px rgba(19, 164, 118, 0.5);
+}
+login h1:hover {
+  box-shadow: inset 2px 2px 2px 2px #068e23e0;
+  transition: all 0.5s ease-in-out;
+  border-radius: 4px;
+}
+.inputbox {
+  max-width: 500px;
+  position: relative;
+  margin: 20px 0;
+  font-weight: bolder;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  transition: all 0.9s ease-in-out;
+}
+.inputbox:hover {
+  box-shadow: inset 2px 2px 2px 2px #66a211;
+  transition: 0.0001s ease-in-out;
+  border-radius: 4px;
+}
+.inputbox input {
+  width: 100%;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0 35px 0 5px;
+  color: rgb(72, 148, 215);
+}
+
+.inputbox label {
+  position: relative;
+  top: 50%;
+  left: 5px;
+  font-size: 1rem;
+  transform: translateY(-50%);
+  transition: all 0.9s ease-in-out;
+  font-size: 16px;
+  font-family: "Parkinsans", serif;
+}
+input:focus ~ label,
+input:valid ~ label {
+  font-size: 0.8rem;
+  top: -5px;
+  color: #b21717;
+}
+.button {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bolder;
+  transition: all 0.6s ease-in-out;
+}
+button:hover {
+  background-color: rgb(26, 96, 96);
+  color: #ccc;
+}
+#message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  display: none;
+  font-family: "Parkinsans", serif;
+}
+
+
+/* From Uiverse.io by micaelgomestavares */ 
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 30px;
+  width: 450px;
+  border-radius: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form button {
+  align-self: flex-end;
+}
+
+.flex-column > label {
+  color: #151717;
+  font-weight: 600;
+}
+
+.inputForm {
+  border: 1.5px solid #ecedec;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.input {
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 85%;
+  height: 100%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.inputForm:focus-within {
+  border: 1.5px solid #2d79f3;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.flex-row > div > label {
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+}
+
+.span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #2d79f3;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button-submit {
+  margin: 20px 0 10px 0;
+  background-color: #151717;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #252727;
+}
+
+.p {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+  border: 1px solid #ededef;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid #2d79f3;
+  ;
+}
+
+    /* From Uiverse.io by mrhyddenn */ 
+#preloader {
+  overflow: hidden;
+  background-color: #2a2a2a;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 99999;
+  color: #fff;
+}
+.loader {
+  --duration: 2s;
+  --logo-color: grey;
+  --background: linear-gradient(
+    0deg,
+    rgba(50, 50, 50, 0.2) 0%,
+    rgba(100, 100, 100, 0.2) 100%
+  );
+  position: absolute;
+}
+
+.loader .box {
+  position: absolute;
+  background: rgba(100, 100, 100, 0.15);
+  background: var(--background);
+  border-radius: 50%;
+  border-top: 1px solid rgba(100, 100, 100, 1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
+  backdrop-filter: blur(5px);
+  animation: ripple var(--duration) infinite ease-in-out;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+ 
+}
+
+.loader .box:nth-child(1) {
+  inset: 40%;
+  z-index: 99;
+  position: absolute;
+  left: 50%;
+}
+
+.loader .box:nth-child(2) {
+  inset: 30%;
+  z-index: 98;
+  border-color: rgba(100, 100, 100, 0.8);
+  animation-delay: 0.2s;
+  position: absolute;
+  left: 50%;
+}
+
+.loader .box:nth-child(3) {
+  inset: 20%;
+  z-index: 97;
+  border-color: rgba(100, 100, 100, 0.6);
+  animation-delay: 0.4s;
+  position: absolute;
+  left: 50%;
+}
+
+.loader .box:nth-child(4) {
+  inset: 10%;
+  z-index: 96;
+  border-color: rgba(100, 100, 100, 0.4);
+  animation-delay: 0.6s;
+  position: absolute;
+  left: 50%;
+}
+
+.loader .box:nth-child(5) {
+  inset: 0%;
+  z-index: 95;
+  border-color: rgba(100, 100, 100, 0.2);
+  animation-delay: 0.8s;
+  position: absolute;
+  left: 50%;
+}
+
+.loader .logo {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  padding: 30%;
+}
+
+.loader .logo svg {
+  fill: var(--logo-color);
+  width: 80%;
+  animation: color-change var(--duration) infinite ease-in-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
+  }
+  50% {
+    transform: scale(1.3);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 30px 20px -0px;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 10px -0px;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    fill: var(--logo-color);
+  }
+  50% {
+    fill: white;
+  }
+  100% {
+    fill: var(--logo-color);
+  }
+}

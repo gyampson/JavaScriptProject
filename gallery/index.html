@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="gallery-wrap">
+      <img src="images/prev.png" id="next" />
+    </div>
+    <div class="gallery">
+      <div>
+        <span
+          ><img
+            class="img"
+            src="images/WhatsApp Image 2024-12-14 at 08.19.09_00ded644.jpg"
+        /></span>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_8d2e727f.jpg"
+        /></span>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_3915d892.jpg"
+        /></span>
+      </div>
+      <div>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_add87b59.jpg"
+        /></span>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_add87b59.jpg"
+        /></span>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_8d2e727f.jpg"
+        /></span>
+      </div>
+      <div>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_add87b59.jpg"
+        /></span>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_add87b59.jpg"
+        /></span>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_8d2e727f.jpg"
+        /></span>
+      </div>
+      <div>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_add87b59.jpg"
+        /></span>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_add87b59.jpg"
+        /></span>
+        <span
+          ><img src="images/WhatsApp Image 2024-12-14 at 08.19.09_8d2e727f.jpg"
+        /></span>
+      </div>
+    </div>
+    <div class="gallery-wrap">
+      <img src="images/next.png" id="back" />
+      <img src="images/dark.png" id="icon">
+    </div>
+   
+    <script>
+      let scrollContainer = document.querySelector(".gallery");
+      let back = document.getElementById("back");
+      let next = document.getElementById("next");
+
+      scrollContainer.addEventListener("wheel", (evt) => {
+        evt.preventDefault();
+        scrollContainer.scrollLeft += evt.deltaY;
+        scrollContainer.style.scrollBehavior = "auto";
+      });
+      back.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 900;
+      });
+      next.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 900;
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

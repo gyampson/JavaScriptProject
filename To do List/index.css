@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(505deg, #153677, #0cb91a);
+  padding: 10px;
+}
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: linear-gradient(505deg, #770ecd, #33df42);
+  background-color: transparent;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 7px;
+  backdrop-filter: blur(10px);
+}
+.todo-app h2 {
+  color: beige;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #aab8ab;
+  border-radius: 30px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  backdrop-filter: blur(50px);
+  padding: 10px;
+  font-weight: 14px;
+  border: none;
+  outline: none;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #4fd758;
+  backdrop-filter: blur(50px);
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 30px;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li .checked{
+    color: #aab8ab;
+    text-decoration: line-through;
+}
+ul li .checked::before{
+background-image: url();
+}
+
+
+#preloader {
+  overflow: hidden;
+  background-color: #2a2a2a;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 99999;
+  color: #fff;
+}
+
+#preloader .jumper {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#preloader .jumper > div {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: jumper 1s 0s linear infinite;
+  animation: jumper 1s 0s linear infinite;
+}
+
+#preloader .jumper > div:nth-child(2) {
+  -webkit-animation-delay: 0.33333s;
+  animation-delay: 0.33333s;
+}
+
+#preloader .jumper > div:nth-child(3) {
+  -webkit-animation-delay: 0.66666s;
+  animation-delay: 0.66666s;
+}
+
+@-webkit-keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* echo "# javaScriptProject" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/gyampson/javaScriptProject.git
+git push -u origin main
+
+
+git remote add origin https://github.com/gyampson/javaScriptProject.git
+git branch -M main
+git push -u origin main */

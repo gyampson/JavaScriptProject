@@ -1,0 +1,79 @@
+body {
+  font-family: "Parkinsans", serif;
+  background: radial-gradient(circle, #00f, #020202);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  font-weight: bolder;
+}
+.clock {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  border-radius: 50%;
+  background: radial-gradient(circle, #05263c, #000d1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock ::before {
+  content: "";
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.number {
+  transform: rotate(calc(30deg * var(--n)));
+  position: absolute;
+  text-align: center;
+  inset: 20px;
+  font-size: 20px;
+  font-family: "Parkinsans", serif;
+}
+.number b {
+  transform: rotate(calc(-30deg * var(--n)));
+  display: inline-block;
+}
+
+.center-dot {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+}
+.hour-hand,
+.minute-hand,
+.second-hand {
+  --rotate: 0;
+  left: 50%;
+  bottom: 50%;
+  position: absolute;
+  transform: translate(-50%) rotate(calc(var(--rotate) * 1deg));
+  box-shadow: 0 0 5px rgba(25, 100, 192, 5);
+  transform-origin: bottom;
+  transition: transform 1s ease-in-out;
+}
+.hour-hand {
+  width: 12px;
+  height: 130px;
+  background-color: #f00;
+  border-radius: 50%;
+}
+.minute-hand {
+  width: 6px;
+  height: 190px;
+  background-color: #00f;
+  border-radius: 50%;
+  position: absolute;
+}
+.second-hand {
+  width: 3px;
+  height: 200px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+}

@@ -1,0 +1,90 @@
+body {
+  background-color: blueviolet;
+  font-family: "Parkinsans", serif;
+}
+.hero {
+  width: 100%;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 50px;
+  margin-top: -50px;
+}
+textarea {
+  width: 90%;
+  height: 250px;
+  color: #2705bc;
+  border: 0;
+  outline: 0;
+  padding: 20px;
+  border-radius: 5px;
+  resize: none;
+  font-family: "Parkinsans", serif;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+.row {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+button {
+  width: 10em;
+  height: 3.5em;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+
+  box-shadow: inset 0px 0px 5px rgba(42, 192, 100, 3);
+}
+
+button::after {
+  transition: 4s;
+  transform-origin: center;
+}
+
+button::before {
+  transform-origin: center;
+  transition: 5s;
+}
+
+button:hover::before,
+button:hover::after {
+  transform: scale(50%);
+}
+
+button:hover {
+  box-shadow: inset 40px 60px 25px #b1ea14;
+  color: #2705bc;
+}
+select {
+  width: 10em;
+  height: 3.5em;
+  border: 3px ridge #149cea;
+  outline: none;
+  background-color: transparent;
+  color: rgb(47, 1, 56);
+  transition: 1s;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+select:hover {
+  box-shadow: inset 140px 0px 0px #72c6db;
+}

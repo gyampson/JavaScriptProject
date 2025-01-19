@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>TO DO LOST</title>
+</head>
+<body>
+    <div id="preloader">
+        <div class="jumper">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    <div class="container">
+        <div class="todo-app">
+            <h2>TO DO LIST</h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add Your Text">
+                <button >Add</button>
+            </div>
+            <ul id="list-container">
+             <li class="checked">TASK 1</li>
+             <li>TASK 1</li>
+             <li>TASK 1</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+   setTimeout(function(){
+    fun();
+
+   }, 5000 );
+
+   function fun(){
+    document.getElementById('preloader').style.display = 'none';
+   }
+    </script>
+
+</body>
+</html>
